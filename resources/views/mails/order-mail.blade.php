@@ -1,0 +1,22 @@
+<div>
+    @if(isset($order))
+        <div><h2>
+                {{$user->name}}
+            </h2>
+        </div>
+        <div>
+            <p>
+                {{$user->email}}
+            </p>
+            <p>
+                {{$order->subject}}
+            </p>
+            <p>
+                {{$order->message}}
+            </p>
+            <p>
+                {{$order->file_link}}
+            </p>
+        </div>
+    @endif
+</div>
